@@ -53,7 +53,8 @@ namespace ARVision
             {
                 cameraSource = new CameraSource.Builder(ApplicationContext, txtRecognizer)
                 .SetFacing(CameraFacing.Back)
-                .SetRequestedPreviewSize(Resources.DisplayMetrics.WidthPixels, Resources.DisplayMetrics.HeightPixels)
+                //.SetRequestedPreviewSize(Resources.DisplayMetrics.WidthPixels, Resources.DisplayMetrics.HeightPixels)
+                .SetRequestedPreviewSize(1080, 1920)
                 .SetRequestedFps(2.0f)
                 .SetAutoFocusEnabled(true).Build();
                 cameraView.Holder.AddCallback(this);
